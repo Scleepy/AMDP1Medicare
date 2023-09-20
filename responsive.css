@@ -1,0 +1,31 @@
+@media only screen and (max-width:680px){
+
+    .right-navbar > ul{
+        width: 370px;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+    .right-navbar{
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+    
+    .product-healthcare-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .healthcare-item {
+        margin-bottom: 50px;
+    }
+
+}

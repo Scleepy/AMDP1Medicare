@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: #180A0A;
+    font-size: 15px;
+    list-style: none;
+}
+
+.navbar-container {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2% 0 2%;
+}
+
+.hover-animation:hover{
+    text-decoration: underline solid #38abab 2px;
+    text-underline-offset: 6px;
+}
+
+.right-navbar > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.dropdown{
+    background-color: white;
+    margin-left: -20px;
+    width: 100px;
+    padding: 5px 0 8px 10px;
+    line-height: 35px;
+    display: block;
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 6px 0px #73777B;
+    border-radius: 5px;
+}
+
+.dropdown > li > a:hover {
+    color: #38abab;
+}
+
+.right-navbar > ul > li:hover > ul{
+    display: block;
+}
+
+.color-button{
+    border: none;
+    background-color: #38abab;
+    color: white;
+    height: 40px;
+    width: 80px;
+}
+
+.rounded {
+    border-radius: 35px;
+}
+
+.color-button:hover{
+    border: 3px solid #38abab;
+    background-color: white;
+    color: #38abab;
+    transition: all 0.2s ease-in-out;
+}
+
+.homepage {
+    background-image: url(./assets/home.jpg);
+    background-size: cover;
+}
+
+.homepage > div {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.homepage h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.homepage h3 {
+    font-size:  20px;
+    font-weight: 400;
+    color: white;
+}
+
+.homepage-text-container {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 70px;
+}
+
+.homepage-text-container button:hover {
+    background-color: #49a2b6;
+    border: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.inner-footer-container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons img {
+    height: 25px;
+}
+
+.product-healthcare-heading h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.product-healthcare-heading {
+    text-align: center;
+}
+
+.healthcare-item {
+    height: 410px;
+    width: 320px;
+    box-shadow: 0 0 6px 0px #73777B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.healthcare-item-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.healthcare-item img {
+    height: 220px;
+}
+
+.healthcare-item p {
+    width: 280px;
+    font-size: 14px;
+    margin: 20px 0 20px 0;
+}
+
+.best-selling-banner {
+    background-color: yellow;
+    padding: 10px 10px 10px 10px;
+    align-self: flex-start;
+}
+
+.product-healthcare-items {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-healthcare {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.product-healthcare-heading {
+    margin: 80px 0 80px 0;
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-contents {
+    width: 70%;
+}
+
+.about-us-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    margin-top: 70px;
+}
+
+.about-us-header-container h1 {
+    font-size: 48px;
+}
+
+.contact-us-container {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-us-container h1 {
+    font-size: 20px;
+}
+
+.contact-us-container p {
+    font-size: 16px;
+}
+
+.login-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container {
+    width: 60%;
+}
+
+.login-page-container h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.input-field {
+    width: 80%;
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.input-field input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.input-field label {
+    color: #38abab;
+}
+
+.button-login {
+    padding: 10px;
+    width: 170px;
+    background-color: white;
+    border: 2px solid #CFD2CF;
+    border-radius: 5px;
+    color: #38abab;
+}
+
+.button-login:hover {
+    background-color: #38abab;
+    border-color: #38abab;
+    color: white;
+}
+
+
+.middle-register {
+    color: #38abab;
+}
+
+.form-lower-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 170px;
+    justify-content: space-evenly;
+}
+
+.login-page-container {
+    margin: 50px 0 50px 0;
+}
+
+.hidden-text {
+    margin-top: 5px;
+    color: red;
+    opacity: 0;
+}
+
+.show-text {
+    opacity: 1;
+}
+
+.register-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+}
+
+.register-form-container {
+    width: 70%;
+}
+
+.register-form, .login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-page-container h1{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.gender-input {
+    margin-top: 20px;
+    width: 80%;
+}
+
+#radio-container{
+    margin-top: 10px;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+input[type="radio"]{
+    accent-color: teal;
+    height: 15px;
+    width: 15px;
+}
+
+#radio-container label {
+    margin-left: 3px;
+}
+
+.input-field select {
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #73777B;
+    border-radius: 5px;
+}
+
+.city-field label{
+    color: black;
+}
+
+.register-field {
+    margin-top: 10px;
+}
+
+.form-lower-component .color-button {
+    width: 200px;
+    border-radius: 2px;
+}
+
+
+.hamburger-button {
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 35px;
+    display: none;
+    padding-right: 10px;
+}
+
+.mobile-navbar {
+    background-color: #38abab;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    right: -100%;
+    transition: all 0.2s ease-in-out;
+    display: none;
+}
+
+.appear {
+    right: 0;
+}
+
+.mobile-navbar a{
+    color: white;
+}
+
+.mobile-navbar > ul > li > a:hover{
+    color: white;
+    text-decoration: underline solid white 2px;
+    text-underline-offset: 6px;
+}
+
+.dropdown-mobile {
+    background-color: white;
+    display: none;
+}
+
+.show-product-dropdown {
+    display: block;
+}
+
+.dropdown-mobile a{
+    color: #38abab;
+}
+
+.dropdown-mobile a:hover{
+    text-decoration: underline solid #38abab 2px;
+    text-underline-offset: 6px;
+}

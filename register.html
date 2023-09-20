@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>medicare</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-container">
+            <div class="left-navbar">
+                <a href="./index.html"><img src="./assets/icon.png" alt="logo icon"></a>
+            </div>
+            <div class="right-navbar">
+                <ul>
+                    <li><a class="hover-animation" href="./index.html">Home</a></li>
+                    <li><a href="#">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="./healthcare.html">Healthcare</a></li>
+                            <li><a href="#">Cosmetics</a></li>
+                            <li><a href="#">Misc.</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="hover-animation" href="./aboutus.html" >About Us</a></li>
+                    <li><a class="hover-animation" href="./register.html">Register</a></li>
+                    <button class="color-button rounded" onclick="window.open('./login.html', '_self')">Login</button>
+                </ul>
+            </div>
+            <button class="hamburger-button">&#9776;</button>
+        </nav>
+
+        <nav class="mobile-navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#" class="dropdown-mobile-anchor">Products</a>
+                    <ul class="dropdown-mobile">
+                        <li><a href="./healthcare.html">Healthcare</a></li>
+                        <li><a href="#">Cosmetics</a></li>
+                        <li><a href="#">Misc.</a></li>
+                    </ul>
+                </li>
+                <li><a href="./aboutus.html" >About Us</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="register-page-container">
+        <div class="register-form-container">
+            <h1>Register</h1>
+            <form action="#" class="register-form" id="registerFormId" novalidate>
+                <div class="input-field register-field">
+                    <input type="text" name="inputRegisterName" id="inputRegisterName" placeholder="Full Name">
+                    <p class="hidden-text">Name must not be empty</p>
+                </div>
+
+                <div class="input-field register-field">
+                    <input type="email" name="inputRegisterEmail" id="inputRegisterEmail" placeholder="Email">
+                    <p class="hidden-text">Email must be valid and not empty</p>
+                </div>
+                
+                <div class="gender-input">
+                    <p>Gender</p>
+                    <div id="radio-container">
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div id="hidden-trigger-anchor">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <p class="hidden-text">Please select a gender</p>
+                </div>
+
+                <div class="input-field city-field register-field">
+                    <label for="city">City</label>
+                    <select name="city" id="city">
+                        <option value="Select a City">Select a City</option>
+                    </select>
+                    <p class="hidden-text">Please select a city</p>
+                </div>
+
+                <div class="input-field register-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="inputRegisterPassword" id="inputRegisterPassword">
+                    <p class="hidden-text">Password must not be empty, contain atleast: 8 characters, 1 capital letter, 1 number</p>
+                </div>
+
+                <div class="input-field register-field">
+                    <label for="password"> Confirm Password</label>
+                    <input type="password" name="inputRegisterConfirmPassword" id="inputRegisterConfirmPassword">
+                    <p class="hidden-text">Passwords do not match</p>
+                </div>
+                
+                <div class="form-lower-component">
+                    <button class="color-button" id="buttonRegisterId">Register</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="inner-footer-container">
+            <div class="social-icons">
+                <a href="https://twitter.com/" target="_blank"><img src="./assets/socials/twitter.png" alt=""></a>
+                <a href="https://facebook.com/" target="_blank"><img src="./assets/socials/facebook.png" alt=""></a>
+                <a href="https://instagram.com/" target="_blank"><img src="./assets/socials/instagram.png" alt=""></a>
+            </div>
+            <div class="footer-text">
+                <p>Copyright © 2022 Daniel Yohanes. All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./register.js"></script>
+    <script src="./mobile.js"></script>
+</body>
+</html>

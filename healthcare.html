@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>medicare</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar-container">
+            <div class="left-navbar">
+                <a href="./index.html"><img src="./assets/icon.png" alt="logo icon"></a>
+            </div>
+            <div class="right-navbar">
+                <ul>
+                    <li><a class="hover-animation" href="./index.html">Home</a></li>
+                    <li><a href="#">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="./healthcare.html">Healthcare</a></li>
+                            <li><a href="#">Cosmetics</a></li>
+                            <li><a href="#">Misc.</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="hover-animation" href="./aboutus.html" >About Us</a></li>
+                    <li><a class="hover-animation" href="./register.html">Register</a></li>
+                    <button class="color-button rounded" onclick="window.open('./login.html', '_self')">Login</button>
+                </ul>
+            </div>
+            <button class="hamburger-button">&#9776;</button>
+        </nav>
+
+        <nav class="mobile-navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#" class="dropdown-mobile-anchor">Products</a>
+                    <ul class="dropdown-mobile">
+                        <li><a href="./healthcare.html">Healthcare</a></li>
+                        <li><a href="#">Cosmetics</a></li>
+                        <li><a href="#">Misc.</a></li>
+                    </ul>
+                </li>
+                <li><a href="./aboutus.html" >About Us</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="product-healthcare">
+
+        <div class="product-healthcare-heading">
+            <h1>Healthcare</h1>
+            <p>Our most popular health care products, made and packaged carefully to cater your needs</p>
+        </div>
+
+        
+        <div class="product-healthcare-items">
+
+            <div class="healthcare-item">
+                <div class="best-selling-banner">
+                    <h1>Best Selling!</h1>
+                </div>
+                <div class="healthcare-item-inner">
+                    <div class="healthcare-item-top">
+                        <img src="./assets/healthcare/basil_oil.jpg" alt="">
+                    </div>
+    
+                    <div class="healthcare-item-bottom">
+                        <h1>MediCare Basil Oil</h1>
+                        <p>Basil oil is extracted from the herb Ocimum basilicum, of the Lamiaceae (Labiatae) family. It is also known as European, French, common or sweet basil.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="healthcare-item">
+                <div class="healthcare-item-inner">
+                    <div class="healthcare-item-top">
+                        <img src="./assets/healthcare/shampoo.jpg" alt="">
+                    </div>
+    
+                    <div class="healthcare-item-bottom">
+                        <h1>MediCare Special Shampoo</h1>
+                        <p>Get a head start every morning and experience the refreshing tingle of our special shampoo. Our shampoo contains special ingredients and tea tree oil to help wash away impurities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="healthcare-item">
+                <div class="healthcare-item-inner">
+                    <div class="healthcare-item-top">
+                        <img src="./assets/healthcare/lotion.jpg" alt="">
+                    </div>
+    
+                    <div class="healthcare-item-bottom">
+                        <h1>MediCare Body Lotion</h1>
+                        <p>Containing earth-derived ingredients (think shea butter, cocoa butter, and jojoba oil) the rich concoction is formulated to condition, nourish, and smooth dry skin. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="inner-footer-container">
+            <div class="social-icons">
+                <a href="https://twitter.com/" target="_blank"><img src="./assets/socials/twitter.png" alt=""></a>
+                <a href="https://facebook.com/" target="_blank"><img src="./assets/socials/facebook.png" alt=""></a>
+                <a href="https://instagram.com/" target="_blank"><img src="./assets/socials/instagram.png" alt=""></a>
+            </div>
+            <div class="footer-text">
+                <p>Copyright © 2022 Daniel Yohanes. All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./mobile.js"></script>
+</body>
+</html>
